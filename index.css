@@ -15,7 +15,10 @@ body{
 .background{
 width: 100%;
 height: 100vh;
-background: linear-gradient(to bottom right, #8ce , #7bd , #6ad , #6ac  , #59c, #48b, #27a);
+/* background: linear-gradient(to bottom right, #8ce , #7bd , #6ad , #6ac  , #59c, #48b, #27a); */
+/* background: linear-gradient(to bottom, #8ce , #7bd , #6ad , #6ac  , #59c, #48b, #27a, #16a, #169); */
+background: linear-gradient(to top, #84cff5, #71bfe7, #84cff5, #71bfe7, #7abddf, #71bfe7, 
+#65bde9, #65bde9, #53a6cf,#4a9ec7, #4593b9, #4481a0, #326985);
 }
 
 .content{
@@ -691,6 +694,7 @@ top: -385px;
    height: 10px;
    background: #f99;
    left:25px; 
+   top: 2px;
    border-radius: 5px 5px 0 0 ;
 }
 
@@ -711,7 +715,7 @@ top: -385px;
     width: 12px;
     height:8px;
     background: #0bd;
-    top: -2px;
+    top: 0px;
     left: 21px;
 }
 
@@ -721,14 +725,15 @@ top: -385px;
     top: 2px;
     left: -2px;
     background: rgba(93, 205, 232);
+    border-radius: 5px;
 }
 
 .plastic li:nth-child(3){
     width: 30px;
     height: 20px;
     background: rgba(93, 205, 232, .5);
-    top: -6px;
-    left:3px;
+    top: -4px;
+    left:4px;
     border-radius: 90px 90px 40px 40px;
     border-bottom: 5px solid #0bd;
     z-index: 5;
@@ -738,7 +743,7 @@ top: -385px;
 .plastic li:nth-child(3):after{
     border-width: 1px 1px 1px 3px;
     border-style: solid;
-    border-color: transparent transparent transparent #cff;
+    border-color: transparent transparent transparent rgba(204, 255, 255, 0.5);
     border-radius: 50%;
     
 }
@@ -753,24 +758,24 @@ top: -385px;
 
 .plastic li:nth-child(3):after{
     width: 0px;
-    height: 15px;
+    height: 18px;
     top: 26px;
     left: 2px;
 }
 
 .plastic li:nth-child(4){
-    width: 30px;
+    width: 31px;
     height: 6px;
     background: rgba(93, 205, 232, .5);
-    left: -6px;
-    top: -9px;
+    left: -7px;
+    top: -8px;
     border-radius: 5px 5px 0 0 ;
     z-index: 0;
     border-bottom: 5px solid #f99;
 }
 
  .plastic li:nth-child(4):before{
-    width: 30px;
+    width: 31px;
     height: 0px;
     border-bottom: 15px solid #f99;
     top: 10px;
@@ -780,24 +785,24 @@ top: -385px;
 .plastic li:nth-child(4):after{
     width: 0;
     height: 0;
-    top: 16px;
-    left: -13px;
-    border-width:9px 28px 3px 15px;
+    top: 5.5px;
+    left: -7px;
+    border-width:19px 28px 0px 10px;
     border-style: solid;
     border-color:   transparent #b77 transparent  transparent;
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
 } 
 
 /* waves around plastic*/
 .plastic li:nth-child(5){
-    width: 42px;
+    width: 45px;
     height: 15px;
     border-width: 0px 0px 8px 8px;
     border-style: solid;
     border-color: transparent transparent rgba(0, 84, 108, .6) rgba(0, 84, 108, .6) ;
     border-radius: 50%;
-    left: -23px;
-    top: -17px;
+    left: -30px;
+    top: -19px;
     transform: rotate(0deg);
     z-index: 4;
 }
@@ -831,9 +836,10 @@ top: -385px;
 .plastic li:nth-child(8)
 {
     width: 31px;
-    background: #079;
-    border-bottom: 5px solid #068;
+    background: rgba(0, 102, 125, 0.4);
+    border-bottom: 5px solid rgba(0, 102, 136, .4);
 }
+
 .plastic li:nth-child(6){
     height: 5px;
     border-radius: 0 0 5px 5px;
@@ -841,7 +847,6 @@ top: -385px;
     top: -22px;
     z-index: 2;
 }
-
 
 .plastic li:nth-child(7){
     height: 8px;
@@ -853,14 +858,15 @@ top: -385px;
 
 .plastic li:nth-child(7):before, 
 .plastic li:nth-child(8):before{
-  border-left: 3px solid #089;
-  width: 0px;
+  border-width: 1px 0px 1px 3px;
+  border-style: solid;
+  border-color: transparent transparent transparent  rgb(16, 150, 173);
+  width: 7px;
   height: 9px;
   border-radius: 50%;
   top: 2px;
   left: 2px;
 }
-
 
 .plastic li:nth-child(8){
     height: 13px;
